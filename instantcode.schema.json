@@ -1,0 +1,59 @@
+{
+    "title":"Minimal svelte template",
+    "useSQLite" : false,
+    "vercelProductionURL" : "https://vercel-minimal.vercel.app",
+    "schema":[
+        {
+            "id":"user",
+            "fields":[
+                {
+                    "id":"email",
+                    "type":"String",
+                    "options" : {
+                        "optional" : true
+                    }
+                }
+            ],
+            "children" : [
+                {
+                    "id" : "app"
+                }
+            ],
+            "options" : {
+                "isUser" : true
+            }
+        },
+        {
+            "id":"app",
+            "fields":[
+                {
+                    "id":"text",
+                    "type":"String"
+                },
+                {
+                    "id":"other",
+                    "type":"String"
+                },
+                {
+                    "id":"isPublished",
+                    "type":"Boolean",
+                    "options" : {
+                        "default" : "\"false\""
+                    }
+                },
+                {
+                    "id":"detail",
+                    "type":"Json",
+                    "options" : {
+                        "optional" : true
+                    }
+                }
+            ],
+            "parents" : [
+                {
+                    "id" : "user"
+                }
+            ]
+        }
+    ]
+}

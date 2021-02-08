@@ -1,0 +1,5 @@
+{ 
+            "files" : ["./frontend/src/app/pages/user/user.page.svelte","./frontend/src/app/pages/app/app.page.svelte","./frontend/src/app/pages/user/datatable.partial.svelte","./frontend/src/app/pages/app/datatable.partial.svelte","./frontend/src/app/services/client/user.service.js","./frontend/src/app/services/client/app.service.js","./frontend/src/app/services/client/index.js","./frontend/src/app/pages/index.js","./frontend/src/app/routes/index.js","./frontend/src/app/components/molecules/Aside.svelte","./backend/src/services/user.js","./backend/src/services/app.js","./backend/src/routes/user.js","./backend/src/routes/app.js","./backend/src/app.js","./prisma/schema.prisma"],
+            "buildAt" : "2/7/2021, 6:21:15 PM",
+            "buildName" : "latest"
+        }
